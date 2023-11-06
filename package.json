@@ -1,0 +1,24 @@
+{
+  "name": "flc-typejs",
+  "version": "1.0.0",
+  "description": "typechecker for javascript variables.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infodavid00"
+  },
+  "keywords": [
+    "typecheking",
+    "javascript",
+    "js"
+  ],
+  "author": "david FLC",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^5.3.0"
+  }
+}
