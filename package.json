@@ -1,5 +1,5 @@
 {
-  "name": "flc-typejs",
+  "name": "f-typejs",
   "version": "1.0.0",
   "description": "typechecker for javascript variables.",
   "main": "index.js",

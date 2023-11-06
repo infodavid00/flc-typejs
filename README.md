@@ -1,10 +1,10 @@
-# typejs
+# f-typejs
 
 created by david flc
 
 # about
 
-typejs is a typechecker for javascript, when addedd in your project, it checks the value of your variables and ensures that it matches the type you defined for the variabe. it follows the syntax :
+typejs is a typechecker for javascript, when added in your project, it checks the value of your variables and ensures that it matches the type you defined for the variabe. it follows the syntax :
 
 ** let identifier = type(datatype, value); **
 
@@ -16,7 +16,7 @@ in javascript, arrays are threated as objects and float numbers are threated as 
 
 # available datatypes
 
-string,int,bool,null,undefined,empty,array,object, float
+string,int,bool,null,undefined,empty,array,object, float.
 
 note that empty returns an empty string and not an empty variable,
 
@@ -26,18 +26,26 @@ arrays are not considered objects (plain javascript) but are considered arrays.
 
 # use cases
 
-** npm install typejs **
+** npm i f-typejs **
 
-import {type} from 'typejs'
+import {type} from "f-typejs";
 
 const str = type("string", "david flc");
+
 const num = type("int", 50);
+
 const bool = type("bool", true);
+
 const nullt = type("null");
+
 const undefinedt = type("undefined");
+
 const empty = type("empty");
+
 const array = type("array", ["david", "flc"]);
+
 const object = type("object", { name: "DAVID" });
+
 const float = type("float", 2.2);
 
 console.log(str, num, bool, nullt, undefinedt, empty, array, object, float);
@@ -50,14 +58,18 @@ typejs also offeres typechecking for email, mobile, url and passwords.
 
 ** use cases **
 
-import { test } from "typejs";
+import { test } from "f-typejs";
 
 console.log(test("url", "https://github.com/infodavid00"));
+
 console.log(test("email", "davidflc0@gmail.com"));
+
 console.log(test("mobile", "+1234567890"));
+
 console.log(test("password", "davidflc"));
 
 note : typejs returns false if the values are not valid and <thevalues> if valid.
+
 passwords does not validates the password but returns a message indicating if the password is ready (password length less than 6 greater than 26) or not.
 
 # developer
